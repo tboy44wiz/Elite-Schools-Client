@@ -1,0 +1,136 @@
+@import "src/assets/styles/GlobalVariables";
+
+.Carousel_Comp {
+  height: $deviceHeight;
+  width: $fullWidth;
+
+  .carousel-inner__wrapper {
+    height: $deviceHeight;
+    width: $fullWidth;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    .elite__logo {
+      height: 250px;
+      width: 260px;
+      background: url("../../../../assets/images/logos/elite_schools_logo1.png") no-repeat center, #ffffff;
+      background-size: contain;
+      margin: 50px auto;
+      border-radius: 25%;
+      z-index: 10;
+    };
+
+    .background-footage__video {
+      height: $fullHeight;
+      width: $fullWidth;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      //opacity: 0.9;
+    };
+
+    .overlay {
+      height: $fullHeight;
+      width: $fullWidth;
+      background: rgba(0, 5, 98, 0.9);
+
+      position: absolute;
+      top: 0;
+      left: 0;
+    };
+
+    .search__section {
+      z-index: 10;
+
+      h2, p {
+        color: white;
+        text-align: center;
+      };
+      h2 {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 3rem;
+      };
+
+      .directory-search__wrapper {
+        height: min-content;
+        width: $fullWidth;
+        background: #ffffff;
+        border-radius: 7px;
+        padding: 15px 20px;
+
+        .search__form {
+          fieldset {
+            display: flex;
+
+            select {
+              margin: 0 5px;
+              font-size: 1rem;
+
+              &:first-child {
+                margin-left: 0;
+              };
+              &:last-child {
+                margin-right: 0;
+              };
+              &:focus {
+                box-shadow: none;
+                outline: 0;
+              };
+            };
+          };
+
+          .search__button {
+            height: min-content;
+            width: $fullWidth;
+            background: linear-gradient(to right, #9900ff, #05139f);
+            border-radius: 4px;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px;
+
+            &:hover {
+              background: linear-gradient(to right, #05139f, #7b00ff);
+            }
+          };
+        };
+      };
+
+      .school-level__wrapper {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .nursery, .primary, .secondary, .tertiary {
+          height: 110px;
+          width: 130px;
+          border: 2px solid #354f72;
+          border-radius: 10px;
+          cursor: pointer;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+
+          box-icon {
+            margin-top: 10px;
+          };
+
+          p {
+            color: #9d9d9d;
+            font-size: 0.9rem;
+          };
+        };
+      };
+    };
+
+  };
+};

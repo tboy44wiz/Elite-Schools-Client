@@ -1,0 +1,31 @@
+@import "src/assets/styles/GlobalVariables";
+
+.OurPartners_Comp {
+  height: auto;
+  width: $fullWidth;
+  padding: 50px 0;
+
+  .partners-logo__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .single-partner__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: auto;
+        width: 50%;
+      };
+
+      p {
+        margin-top: 15px;
+        color: #14008a;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 1.3rem;
+      };
+    };
+  };
+};

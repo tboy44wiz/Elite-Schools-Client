@@ -1,0 +1,52 @@
+@import "src/assets/styles/GlobalVariables";
+
+.DirectorySearch_Comp {
+  height: min-content;
+  width: $fullWidth;
+  background: #14008a;
+
+  .directory-search__form {
+    padding: 15px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    fieldset {
+      height: min-content;
+      width: $fullWidth;
+      display: flex;
+
+      select {
+        margin: 0 5px;
+        font-size: 1rem;
+
+        &:first-child {
+          margin-left: 0;
+        };
+        &:last-child {
+          margin-right: 0;
+        };
+        &:focus {
+          box-shadow: none;
+          outline: 0;
+        };
+      };
+
+      .search__button {
+        height: min-content;
+        width: 120px;
+        background: linear-gradient(to right, #9900ff, #05139f);
+        border-radius: 4px;
+        color: #ffffff;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 9.2px;
+
+        &:hover {
+          background: linear-gradient(to right, #05139f, #7b00ff);
+        }
+      };
+    };
+  };
+};

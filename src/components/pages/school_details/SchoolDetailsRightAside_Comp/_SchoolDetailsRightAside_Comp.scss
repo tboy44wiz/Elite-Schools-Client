@@ -1,0 +1,88 @@
+@import "src/assets/styles/GlobalVariables";
+
+.SchoolDetailsRightAside_Comp {
+  height: min-content;
+  width: $fullWidth;
+
+  .contact__wrapper {
+    margin-bottom: 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+
+    .contact-sub__heading {
+      padding-bottom: 10px;
+      border-bottom: 1px solid lightgray;
+      color: #05139f;
+      font-size: 1.3rem;
+      text-align: center;
+    };
+
+    .school-contact__items {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      box-icon {
+        height: available;
+        width: 15px;
+        margin-right: 5px;
+        color: #9D9D9D;
+      };
+      span {
+        color: #575757;
+        font-size: 0.88rem;
+      };
+    };
+  };
+
+  .management-and-principal-team__wrapper {
+    margin-bottom: 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+
+    .management-and-principal-team__heading {
+      padding-bottom: 10px;
+      border-bottom: 1px solid lightgray;
+      color: #05139f;
+      font-size: 1.3rem;
+      text-align: center;
+    };
+
+    ul {
+      padding-left: 0;
+      list-style-type: none;
+
+      li {
+        line-height: 2;
+      };
+    };
+
+    p {
+      margin-bottom: 0;
+      line-height: 2;
+    };
+  };
+
+  .staff-and-student__wrapper {
+    margin-bottom: 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+
+    .staff-and-student__heading {
+      padding-bottom: 10px;
+      border-bottom: 1px solid lightgray;
+      color: #05139f;
+      font-size: 1.3rem;
+      text-align: center;
+    };
+
+    p {
+      margin-bottom: 0;
+      line-height: 2;
+    };
+  };
+};

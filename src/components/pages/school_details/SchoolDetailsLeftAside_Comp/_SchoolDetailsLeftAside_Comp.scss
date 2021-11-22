@@ -1,0 +1,84 @@
+@import "src/assets/styles/GlobalVariables";
+
+.SchoolDetailsLeftAside_Comp {
+  height: min-content;
+  width: $fullWidth;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: justify;
+
+  .school-logo-and-name__wrapper {
+    height: min-content;
+    width: $fullWidth;
+    display: flex;
+
+    .school__logo {
+      height: min-content;
+      width: 170px;
+      margin-right: 20px;
+    };
+
+    .school-name__wrapper {
+      .school__name {
+        color: #05139f;
+        font-size: 1.9rem;
+        font-weight: 800;
+        text-align: start;
+      };
+
+      .school-type-and-LGA {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        box-icon {
+          height: available;
+          width: 15px;
+          margin-right: 5px;
+          color: #9D9D9D;
+        };
+        span {
+          color: #575757;
+          font-size: 0.88rem;
+        };
+      };
+    };
+  };
+
+  .sub__heading {
+    margin-top: 40px;
+    color: #05139f;
+    font-size: 1.3rem;
+  };
+
+  .school-calender__table {
+    height: auto;
+    width: $fullWidth;
+    font-size: 0.9rem;
+    background: #efefef;
+
+    thead {
+      background: #c9dff0;
+
+      tr {
+        th {
+          color: #05139f;
+          font-family: 'Yanone Kaffeesatz', sans-serif;
+          font-size: 1.2rem;
+          font-weight: 600;
+          padding: 5px 10px;
+          //text-align: center;
+        };
+      };
+    };
+    tbody {
+      tr {
+        td {
+          padding: 10px;
+        };
+      };
+    };
+  };
+};

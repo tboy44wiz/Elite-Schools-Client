@@ -1,0 +1,44 @@
+@import "assets/styles/GlobalVariables";
+
+.App {
+  height: min-content;
+  width: $fullWidth;
+  background: whitesmoke;
+  font-size: $fontSize;
+
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-end];
+  grid-template-rows: [appHeader-start] min-content [appHeader-end appBody-start] 1fr [appBody-end appFooter-start] min-content [appFooter-end];
+
+
+
+
+  /*==== Header ====*/
+  header {
+    grid-column: col-start / col-end;
+    grid-row: appHeader-start / appHeader-end;
+
+    height: auto;
+    width: $fullWidth;
+    position: fixed;
+    z-index: 1000;
+  };
+
+  .app-body__wrapper {
+    grid-column: col-start / col-end;
+    grid-row: appBody-start / appBody-end;
+  };
+
+
+
+
+  /*==== Footer ====*/
+  footer {
+    grid-column: col-start / col-end;
+    grid-row: appFooter-start / appFooter-end;
+
+    height: auto;
+    width: $fullWidth;
+    z-index: 1000;
+  };
+};

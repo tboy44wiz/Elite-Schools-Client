@@ -1,0 +1,48 @@
+@import "src/assets/styles/GlobalVariables";
+
+.AppHeader_Comp {
+  //background: #3f3f3f;
+  background: rgb(10, 0, 65);
+  padding: 0 5%;
+
+  .brand__name {
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 600;
+    a {
+      font-size: 2.3rem;
+    }
+  }
+
+  a {
+    //font-weight: 600;
+    color: $linkColor !important;
+
+    &:hover {
+      color: $linkColorHover !important;
+    }
+    &.active {
+      color: $colorOrange !important;
+    }
+    &.active:hover {
+      color: $linkColorHover !important;
+    }
+  }
+
+  .add-school__button {
+    margin-left: 20px;
+    margin-top: 2px;
+    background: linear-gradient(to right, #aa00ff, #05139f);
+    border-radius: 4px;
+    color: #ffffff !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 1s ease;
+
+    &:hover {
+      background: linear-gradient(to right, #05139f, #aa00ff);
+    }
+  };
+};

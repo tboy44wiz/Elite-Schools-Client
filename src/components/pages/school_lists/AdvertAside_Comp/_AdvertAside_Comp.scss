@@ -1,0 +1,109 @@
+@import "src/assets/styles/GlobalVariables";
+
+.AdvertAside_Comp {
+  height: min-content;
+  width: $fullWidth;
+
+  .popular-school-list__Wrapper {
+    margin-bottom: 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+
+    .popular-school__caption {
+      padding-bottom: 10px;
+      border-bottom: 1px solid lightgray;
+      color: #05139f;
+      text-align: center;
+    };
+
+    .popular-school__list {
+      list-style-type: none;
+      padding-left: 0;
+
+      .popular-school__items {
+        margin-top: 20px;
+        height: auto;
+        width: $fullWidth;
+        border-bottom: 1px solid lightgray;
+        cursor: pointer;
+        padding-bottom: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        img {
+          height: min-content;
+          width: 90px;
+          margin-right: 10px;
+        };
+
+        .popular-school-details__wrapper {
+
+          .popular-school__name {
+            color: #05139f;
+            font-size: 0.9rem;;
+          };
+
+          .popular-school-details__items {
+            display: flex;
+
+            box-icon {
+              margin-right: 5px;
+            };
+            span {
+              color: #575757;
+              font-size: 0.8rem;
+            };
+          };
+        };
+      };
+    };
+  };
+
+  .news-lists__Wrapper {
+    margin-bottom: 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+
+    .news-lists__caption {
+      padding-bottom: 10px;
+      border-bottom: 1px solid lightgray;
+      color: #05139f;
+      text-align: center;
+    };
+
+    .news__lists {
+      list-style-type: none;
+      padding-left: 0;
+
+      .news__items {
+        height: auto;
+        width: $fullWidth;
+        margin-top: 20px;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          box-shadow: 0 6px 12px 0 rgba(14,30,37,.12);
+          border-radius: 5px;
+        };
+
+        img {
+          height: auto;
+          width: $fullWidth;
+        };
+
+        .advert__title {
+          color: #05139f;
+          text-align: center;
+          padding: 10px;
+        };
+      };
+    };
+  };
+};

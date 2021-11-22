@@ -1,0 +1,40 @@
+@import "src/assets/styles/GlobalVariables";
+
+.AppFooter_Comp {
+  //background: #3f3f3f;
+  background: rgb(0, 5, 98);
+  color: $secondaryColor;
+  padding: 40px 0 0 0;
+
+  .brand__name {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  };
+
+  a {
+    color: $linkColor;
+    text-decoration: none;
+
+    &:hover {
+      color: $linkColorHover;
+    };
+  };
+
+  .top-footer__wrapper {
+    padding: 40px 0 60px 0;
+  };
+
+  .bottom-footer__wrapper {
+    background: rgb(8, 0, 51);
+    padding: 20px 0;
+
+    .social-icon__wrapper {
+      a {
+        margin-right: 15px;
+      };
+    };
+  };
+}
